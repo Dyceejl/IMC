@@ -1,0 +1,35 @@
+{
+    "imputation": "Mean",
+    "classifier": "RandomForest",
+    "missing_percentage": 0.5,
+    "random_state": 42,
+    "imputation_time": 0.005457401275634766,
+    "validation": {
+        "accuracy": 0.8168831168831169,
+        "balanced_accuracy": 0.5035211267605634,
+        "auc": 0.7699156723782183,
+        "sensitivity": 0.007042253521126761,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.007042253521126761,
+        "F1": 0.013986013986013986,
+        "brier_score": 0.13657619383792685
+    },
+    "test": {
+        "accuracy": 0.8390953990122173,
+        "balanced_accuracy": 0.5133647798742138,
+        "auc": 0.7654096374686857,
+        "sensitivity": 0.026729559748427674,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.026729559748427674,
+        "F1": 0.05206738131699847,
+        "brier_score": 0.12143401206022321
+    },
+    "parameters": {
+        "n_estimators": 144,
+        "max_depth": 2,
+        "min_samples_split": 3,
+        "min_samples_leaf": 3
+    }
+}

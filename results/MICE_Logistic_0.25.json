@@ -1,0 +1,32 @@
+{
+    "imputation": "MICE",
+    "classifier": "Logistic",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 0.47008824348449707,
+    "validation": {
+        "accuracy": 0.8350649350649351,
+        "balanced_accuracy": 0.571891540324751,
+        "auc": 0.7648358302682338,
+        "sensitivity": 0.15492957746478872,
+        "specificity": 0.9888535031847133,
+        "precision": 0.7586206896551724,
+        "recall": 0.15492957746478872,
+        "F1": 0.2573099415204678,
+        "brier_score": 0.12394073735004764
+    },
+    "test": {
+        "accuracy": 0.8557317390174162,
+        "balanced_accuracy": 0.585744952981986,
+        "auc": 0.7448011846071582,
+        "sensitivity": 0.18238993710691823,
+        "specificity": 0.9890999688570539,
+        "precision": 0.7682119205298014,
+        "recall": 0.18238993710691823,
+        "F1": 0.2947903430749682,
+        "brier_score": 0.1138134948077724
+    },
+    "parameters": {
+        "max_iter": 200
+    }
+}

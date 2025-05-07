@@ -212,7 +212,7 @@ class MIWAE(BaseImputer):
 
         # Convert to PyTorch tensors
         X_torch = torch.tensor(X_normalized, dtype=torch.float32).to(self.device)
-        mask_torch = torch.tensor(mask, dtype=torch.float32).to(self.device)
+        mask_torch = torch.tensor(mask, dtype=torch.bool).to(self.device)
 
         # Impute missing values
         with torch.no_grad():
@@ -315,10 +315,12 @@ class MIWAE(BaseImputer):
         X_expanded = X.unsqueeze(0).expand(self.n_samples, -1, -1)
 
         log_p_x_given_z = torch.zeros_like(X_expanded)
-        log_p_x_given_z[mask_expanded] = td.Normal(
-            loc=p_x_mean[mask_expanded],
-            scale=p_x_scale[mask_expanded]
-        ).log_prob(X_expanded[mask_expanded])
+        # Convert mask to boolean
+        mask_expanded_bool = mask_expanded.bool()
+        log_p_x_given_z[mask_expanded_bool] = td.Normal(
+            loc=p_x_mean[mask_expanded_bool],
+            scale=p_x_scale[mask_expanded_bool]
+        ).log_prob(X_expanded[mask_expanded_bool])
 
         log_p_x_given_z = log_p_x_given_z.sum(dim=2)  # Sum over features
 
@@ -374,10 +376,12 @@ class MIWAE(BaseImputer):
         X_expanded = X.unsqueeze(0).expand(self.n_samples, -1, -1)
 
         log_p_x_given_z = torch.zeros_like(X_expanded)
-        log_p_x_given_z[mask_expanded] = td.Normal(
-            loc=p_x_mean[mask_expanded],
-            scale=p_x.base_dist.scale.reshape(self.n_samples, batch_size, -1)[mask_expanded]
-        ).log_prob(X_expanded[mask_expanded])
+        # Convert mask to boolean
+        mask_expanded_bool = mask_expanded.bool()
+        log_p_x_given_z[mask_expanded_bool] = td.Normal(
+            loc=p_x_mean[mask_expanded_bool],
+            scale=p_x.base_dist.scale.reshape(self.n_samples, batch_size, -1)[mask_expanded_bool]
+        ).log_prob(X_expanded[mask_expanded_bool])
 
         log_p_x_given_z = log_p_x_given_z.sum(dim=2)  # Sum over features
 
@@ -399,6 +403,8 @@ class MIWAE(BaseImputer):
         weighted_mean = torch.sum(norm_weight.unsqueeze(-1) * p_x_mean, dim=0)
 
         # Replace missing values with imputed values
-        X_imputed[~mask] = weighted_mean[~mask]
+        # Convert mask to boolean for the inversion operation
+        mask_bool = mask.bool()
+        X_imputed[~mask_bool] = weighted_mean[~mask_bool]
 
         return X_imputed

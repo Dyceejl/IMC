@@ -1,0 +1,35 @@
+{
+    "imputation": "MICE",
+    "classifier": "NeuralNet",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 0.47008824348449707,
+    "validation": {
+        "accuracy": 0.8389610389610389,
+        "balanced_accuracy": 0.6015295595227416,
+        "auc": 0.7541490984121288,
+        "sensitivity": 0.22535211267605634,
+        "specificity": 0.9777070063694268,
+        "precision": 0.6956521739130435,
+        "recall": 0.22535211267605634,
+        "F1": 0.3404255319148936,
+        "brier_score": 0.12730126058366517
+    },
+    "test": {
+        "accuracy": 0.8585911099558097,
+        "balanced_accuracy": 0.6158280106316926,
+        "auc": 0.7332258999625892,
+        "sensitivity": 0.2531446540880503,
+        "specificity": 0.9785113671753348,
+        "precision": 0.7,
+        "recall": 0.2531446540880503,
+        "F1": 0.371824480369515,
+        "brier_score": 0.11718461625991532
+    },
+    "parameters": {
+        "hidden_layers": 3,
+        "hidden_neurons": 5,
+        "learning_rate": 0.03,
+        "max_iter": 200
+    }
+}

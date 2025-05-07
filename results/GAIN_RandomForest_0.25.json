@@ -1,0 +1,35 @@
+{
+    "imputation": "GAIN",
+    "classifier": "RandomForest",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 6.569372177124023,
+    "validation": {
+        "accuracy": 0.8155844155844156,
+        "balanced_accuracy": 0.5,
+        "auc": 0.718141652462546,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "F1": 0.0,
+        "brier_score": 0.1370534599629671
+    },
+    "test": {
+        "accuracy": 0.8351962568234989,
+        "balanced_accuracy": 0.5015723270440252,
+        "auc": 0.732830247439521,
+        "sensitivity": 0.0031446540880503146,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.0031446540880503146,
+        "F1": 0.006269592476489028,
+        "brier_score": 0.12463464952695939
+    },
+    "parameters": {
+        "n_estimators": 144,
+        "max_depth": 2,
+        "min_samples_split": 3,
+        "min_samples_leaf": 3
+    }
+}

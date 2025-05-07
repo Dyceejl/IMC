@@ -1,0 +1,32 @@
+{
+    "imputation": "MissForest",
+    "classifier": "Logistic",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 135.03828763961792,
+    "validation": {
+        "accuracy": 0.8324675324675325,
+        "balanced_accuracy": 0.5757490804700816,
+        "auc": 0.7762850991298107,
+        "sensitivity": 0.16901408450704225,
+        "specificity": 0.982484076433121,
+        "precision": 0.6857142857142857,
+        "recall": 0.16901408450704225,
+        "F1": 0.2711864406779661,
+        "brier_score": 0.12138098439279406
+    },
+    "test": {
+        "accuracy": 0.8567715102677411,
+        "balanced_accuracy": 0.5933027486098298,
+        "auc": 0.7539144136997624,
+        "sensitivity": 0.19968553459119498,
+        "specificity": 0.9869199626284646,
+        "precision": 0.7514792899408284,
+        "recall": 0.19968553459119498,
+        "F1": 0.31552795031055897,
+        "brier_score": 0.11279816608138596
+    },
+    "parameters": {
+        "max_iter": 200
+    }
+}

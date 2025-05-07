@@ -3,35 +3,33 @@
     "classifier": "RandomForest",
     "missing_percentage": 0.25,
     "random_state": 42,
-    "imputation_time": 0.5837335586547852,
+    "imputation_time": 0.006074190139770508,
     "validation": {
-        "accuracy": 0.8428571428571429,
-        "balanced_accuracy": 0.6093679913878173,
-        "auc": 0.776857001883915,
-        "sensitivity": 0.23943661971830985,
-        "specificity": 0.9792993630573248,
-        "precision": 0.723404255319149,
-        "recall": 0.23943661971830985,
-        "F1": 0.35978835978835977,
-        "brier_score": 0.11781753246753246
+        "accuracy": 0.8194805194805195,
+        "balanced_accuracy": 0.5105633802816901,
+        "auc": 0.750235489369337,
+        "sensitivity": 0.02112676056338028,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.02112676056338028,
+        "F1": 0.041379310344827586,
+        "brier_score": 0.13424177029902437
     },
     "test": {
-        "accuracy": 0.9685469196776709,
-        "balanced_accuracy": 0.9130700481246659,
-        "auc": 0.97656542271163,
-        "sensitivity": 0.8301886792452831,
-        "specificity": 0.9959514170040485,
-        "precision": 0.9759704251386322,
-        "recall": 0.8301886792452831,
-        "F1": 0.897196261682243,
-        "brier_score": 0.036224044710163765
+        "accuracy": 0.8396152846373798,
+        "balanced_accuracy": 0.514937106918239,
+        "auc": 0.7646122115604966,
+        "sensitivity": 0.029874213836477988,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.029874213836477988,
+        "F1": 0.05801526717557252,
+        "brier_score": 0.12089188318129739
     },
     "parameters": {
-        "n_estimators": 100,
-        "max_depth": null,
-        "learning_rate": 0.1,
-        "hidden_layers": 2,
-        "hidden_neurons": 100,
-        "max_iter": 200
+        "n_estimators": 144,
+        "max_depth": 2,
+        "min_samples_split": 3,
+        "min_samples_leaf": 3
     }
 }

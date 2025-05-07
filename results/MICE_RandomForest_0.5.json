@@ -1,0 +1,35 @@
+{
+    "imputation": "MICE",
+    "classifier": "RandomForest",
+    "missing_percentage": 0.5,
+    "random_state": 42,
+    "imputation_time": 0.23931527137756348,
+    "validation": {
+        "accuracy": 0.8298701298701299,
+        "balanced_accuracy": 0.5387323943661971,
+        "auc": 0.7485926706737238,
+        "sensitivity": 0.07746478873239436,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.07746478873239436,
+        "F1": 0.1437908496732026,
+        "brier_score": 0.1330657610650216
+    },
+    "test": {
+        "accuracy": 0.8448141408890044,
+        "balanced_accuracy": 0.5312908261498897,
+        "auc": 0.7423232148138572,
+        "sensitivity": 0.06289308176100629,
+        "specificity": 0.9996885705387729,
+        "precision": 0.975609756097561,
+        "recall": 0.06289308176100629,
+        "F1": 0.11816838995568686,
+        "brier_score": 0.12071408545650325
+    },
+    "parameters": {
+        "n_estimators": 144,
+        "max_depth": 2,
+        "min_samples_split": 3,
+        "min_samples_leaf": 3
+    }
+}

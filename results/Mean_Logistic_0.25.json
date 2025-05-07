@@ -1,0 +1,32 @@
+{
+    "imputation": "Mean",
+    "classifier": "Logistic",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 0.006074190139770508,
+    "validation": {
+        "accuracy": 0.8376623376623377,
+        "balanced_accuracy": 0.5789337938458778,
+        "auc": 0.7634677491701802,
+        "sensitivity": 0.16901408450704225,
+        "specificity": 0.9888535031847133,
+        "precision": 0.7741935483870968,
+        "recall": 0.16901408450704225,
+        "F1": 0.27745664739884396,
+        "brier_score": 0.12419739069230522
+    },
+    "test": {
+        "accuracy": 0.8539121393293475,
+        "balanced_accuracy": 0.580241808327898,
+        "auc": 0.7368024420770583,
+        "sensitivity": 0.17138364779874213,
+        "specificity": 0.9890999688570539,
+        "precision": 0.7569444444444444,
+        "recall": 0.17138364779874213,
+        "F1": 0.2794871794871795,
+        "brier_score": 0.11488357574869877
+    },
+    "parameters": {
+        "max_iter": 200
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "imputation": "MissForest",
+    "classifier": "NeuralNet",
+    "missing_percentage": 0.5,
+    "random_state": 42,
+    "imputation_time": 136.94513726234436,
+    "validation": {
+        "accuracy": 0.8337662337662337,
+        "balanced_accuracy": 0.5492957746478874,
+        "auc": 0.7345025567417242,
+        "sensitivity": 0.09859154929577464,
+        "specificity": 1.0,
+        "precision": 1.0,
+        "recall": 0.09859154929577464,
+        "F1": 0.17948717948717946,
+        "brier_score": 0.12845022215187862
+    },
+    "test": {
+        "accuracy": 0.8481933974525604,
+        "balanced_accuracy": 0.5446631958930485,
+        "auc": 0.7363446015955374,
+        "sensitivity": 0.09119496855345911,
+        "specificity": 0.9981314232326378,
+        "precision": 0.90625,
+        "recall": 0.09119496855345911,
+        "F1": 0.1657142857142857,
+        "brier_score": 0.11723804481921671
+    },
+    "parameters": {
+        "hidden_layers": 3,
+        "hidden_neurons": 5,
+        "learning_rate": 0.03,
+        "max_iter": 200
+    }
+}

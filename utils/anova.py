@@ -1,3 +1,6 @@
+import statsmodels as sm
+import numpy as np
+
 def perform_anova_analysis(performance_df, dataset_name=None):
     """
     Perform multi-factor ANOVA analysis on classifier performance.

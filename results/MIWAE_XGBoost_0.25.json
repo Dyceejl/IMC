@@ -1,0 +1,34 @@
+{
+    "imputation": "MIWAE",
+    "classifier": "XGBoost",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 10.826218843460083,
+    "validation": {
+        "accuracy": 0.8402597402597403,
+        "balanced_accuracy": 0.5941508926168476,
+        "auc": 0.7907284471158158,
+        "sensitivity": 0.20422535211267606,
+        "specificity": 0.9840764331210191,
+        "precision": 0.7435897435897436,
+        "recall": 0.20422535211267606,
+        "F1": 0.32044198895027626,
+        "brier_score": 0.11914374166137238
+    },
+    "test": {
+        "accuracy": 0.8775669352742397,
+        "balanced_accuracy": 0.6486304448740474,
+        "auc": 0.8587699221818081,
+        "sensitivity": 0.30660377358490565,
+        "specificity": 0.9906571161631891,
+        "precision": 0.8666666666666667,
+        "recall": 0.30660377358490565,
+        "F1": 0.4529616724738676,
+        "brier_score": 0.0917795465649655
+    },
+    "parameters": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.1
+    }
+}

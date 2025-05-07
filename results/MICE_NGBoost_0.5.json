@@ -1,0 +1,34 @@
+{
+    "imputation": "MICE",
+    "classifier": "NGBoost",
+    "missing_percentage": 0.5,
+    "random_state": 42,
+    "imputation_time": 0.23931527137756348,
+    "validation": {
+        "accuracy": 0.8181818181818182,
+        "balanced_accuracy": 0.5751659639364851,
+        "auc": 0.7021844442450884,
+        "sensitivity": 0.19014084507042253,
+        "specificity": 0.9601910828025477,
+        "precision": 0.5192307692307693,
+        "recall": 0.19014084507042253,
+        "F1": 0.27835051546391754,
+        "brier_score": 0.1398604233110239
+    },
+    "test": {
+        "accuracy": 0.8349363140109176,
+        "balanced_accuracy": 0.6438980391695998,
+        "auc": 0.7501988055994626,
+        "sensitivity": 0.3584905660377358,
+        "specificity": 0.9293055123014637,
+        "precision": 0.5010989010989011,
+        "recall": 0.3584905660377358,
+        "F1": 0.4179651695692026,
+        "brier_score": 0.12714814843746175
+    },
+    "parameters": {
+        "n_estimators": 192,
+        "learning_rate": 0.04,
+        "subsample": 0.6
+    }
+}

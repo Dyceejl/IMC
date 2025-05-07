@@ -1,0 +1,34 @@
+{
+    "imputation": "GAIN",
+    "classifier": "NGBoost",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 6.569372177124023,
+    "validation": {
+        "accuracy": 0.7831168831168831,
+        "balanced_accuracy": 0.5509442002332466,
+        "auc": 0.6120256571274783,
+        "sensitivity": 0.18309859154929578,
+        "specificity": 0.9187898089171974,
+        "precision": 0.33766233766233766,
+        "recall": 0.18309859154929578,
+        "F1": 0.23744292237442924,
+        "brier_score": 0.17134808958478379
+    },
+    "test": {
+        "accuracy": 0.8237587730699246,
+        "balanced_accuracy": 0.6107234565144579,
+        "auc": 0.7205346597486236,
+        "sensitivity": 0.29245283018867924,
+        "specificity": 0.9289940828402367,
+        "precision": 0.4492753623188406,
+        "recall": 0.29245283018867924,
+        "F1": 0.35428571428571426,
+        "brier_score": 0.13792614214302684
+    },
+    "parameters": {
+        "n_estimators": 192,
+        "learning_rate": 0.04,
+        "subsample": 0.6
+    }
+}

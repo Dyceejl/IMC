@@ -1,0 +1,34 @@
+{
+    "imputation": "MissForest",
+    "classifier": "NGBoost",
+    "missing_percentage": 0.5,
+    "random_state": 42,
+    "imputation_time": 136.94513726234436,
+    "validation": {
+        "accuracy": 0.8090909090909091,
+        "balanced_accuracy": 0.5723176639454561,
+        "auc": 0.6374921503543555,
+        "sensitivity": 0.19718309859154928,
+        "specificity": 0.947452229299363,
+        "precision": 0.45901639344262296,
+        "recall": 0.19718309859154928,
+        "F1": 0.27586206896551724,
+        "brier_score": 0.15339345336542679
+    },
+    "test": {
+        "accuracy": 0.8507928255783728,
+        "balanced_accuracy": 0.6565488816940195,
+        "auc": 0.766658048492897,
+        "sensitivity": 0.3663522012578616,
+        "specificity": 0.9467455621301775,
+        "precision": 0.5767326732673267,
+        "recall": 0.3663522012578616,
+        "F1": 0.4480769230769231,
+        "brier_score": 0.11567295445737846
+    },
+    "parameters": {
+        "n_estimators": 192,
+        "learning_rate": 0.04,
+        "subsample": 0.6
+    }
+}

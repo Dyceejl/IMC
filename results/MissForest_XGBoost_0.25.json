@@ -1,0 +1,35 @@
+{
+    "imputation": "MissForest",
+    "classifier": "XGBoost",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 135.03828763961792,
+    "validation": {
+        "accuracy": 0.8454545454545455,
+        "balanced_accuracy": 0.6191351933255584,
+        "auc": 0.8005517179510183,
+        "sensitivity": 0.2605633802816901,
+        "specificity": 0.9777070063694268,
+        "precision": 0.7254901960784313,
+        "recall": 0.2605633802816901,
+        "F1": 0.38341968911917096,
+        "brier_score": 0.11743220094896263
+    },
+    "test": {
+        "accuracy": 0.884585391213933,
+        "balanced_accuracy": 0.6786831430479738,
+        "auc": 0.8909355419362295,
+        "sensitivity": 0.3710691823899371,
+        "specificity": 0.9862971037060105,
+        "precision": 0.8428571428571429,
+        "recall": 0.3710691823899371,
+        "F1": 0.5152838427947598,
+        "brier_score": 0.08483272943568146
+    },
+    "parameters": {
+        "n_estimators": 144,
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "subsample": 0.6
+    }
+}
