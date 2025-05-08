@@ -3,7 +3,7 @@
     "classifier": "RandomForest",
     "missing_percentage": 0.25,
     "random_state": 42,
-    "imputation_time": 0.006074190139770508,
+    "imputation_time": 0.01698136329650879,
     "validation": {
         "accuracy": 0.8194805194805195,
         "balanced_accuracy": 0.5105633802816901,

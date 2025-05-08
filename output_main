@@ -1,0 +1,318 @@
+(base) (.venv) PS D:\prethesis\Imputation_MCL> python main.py --run_all
+================================================================================
+Starting Imputation and Classification Pipeline
+Date and Time: 2025-05-08 16:13:33
+================================================================================
+
+
+################################################################################
+# Running pipeline with missing percentage: 0.25
+################################################################################
+
+=== Running pipeline with missing percentage: 0.25 ===
+
+Loading data...
+Loading train data from: data/MIMIC_subset_mcar\devel_0_train_0_train_missing_0.25_test_missing_0.25.csv
+Loading test data from: data/MIMIC_subset_mcar\devel_0_train_0_train_missing_0.25_test_missing_0.25.csv
+Data loaded successfully. Train shape: (3077, 14), Test shape: (3847, 14)
+Imputation Methods:   0%|                                                                                                                                    | 0/5 [00:00<?, ?it/s]
+Applying Mean imputation...
+Mean imputation completed in 0.02 seconds
+
+Training Logistic classifier with Mean imputation...                                                                                                         | 0/5 [00:00<?, ?it/s]
+Results saved to results/Mean_Logistic_0.25.json
+
+Training RandomForest classifier with Mean imputation...                                                                                             | 1/5 [00:00<00:00,  8.58it/s]
+Results saved to results/Mean_RandomForest_0.25.json
+
+Training XGBoost classifier with Mean imputation...████████████████████████▊                                                                         | 2/5 [00:00<00:00,  4.27it/s]
+Results saved to results/Mean_XGBoost_0.25.json
+
+Training NGBoost classifier with Mean imputation...█████████████████████████████████████████████████▏                                                | 3/5 [00:00<00:00,  3.10it/s]
+Results saved to results/Mean_NGBoost_0.25.json
+
+Training NeuralNet classifier with Mean imputation...███████████████████████████████████████████████████████████████████████▌                        | 4/5 [00:01<00:00,  1.60it/s]
+Results saved to results/Mean_NeuralNet_0.25.json
+Classifiers for Mean: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  2.16it/s]
+Imputation Methods:  20%|████████████████████████▊                                                                                                   | 1/5 [00:02<00:09,  2.34s/it]
+Applying MICE imputation...
+MICE imputation completed in 0.54 seconds
+
+Training Logistic classifier with MICE imputation...                                                                                                         | 0/5 [00:00<?, ?it/s]
+Results saved to results/MICE_Logistic_0.25.json
+
+Training RandomForest classifier with MICE imputation...                                                                                             | 1/5 [00:00<00:00,  7.98it/s]
+Results saved to results/MICE_RandomForest_0.25.json
+
+Training XGBoost classifier with MICE imputation...████████████████████████▊                                                                         | 2/5 [00:00<00:00,  4.19it/s]
+Results saved to results/MICE_XGBoost_0.25.json
+
+Training NGBoost classifier with MICE imputation...█████████████████████████████████████████████████▏                                                | 3/5 [00:00<00:00,  5.05it/s]
+Results saved to results/MICE_NGBoost_0.25.json
+
+Training NeuralNet classifier with MICE imputation...███████████████████████████████████████████████████████████████████████▌                        | 4/5 [00:01<00:00,  1.68it/s]
+Results saved to results/MICE_NeuralNet_0.25.json
+Classifiers for MICE: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  2.19it/s]
+Imputation Methods:  40%|█████████████████████████████████████████████████▌                                                                          | 2/5 [00:05<00:07,  2.63s/it]
+Applying MissForest imputation...
+MissForest imputation completed in 626.80 seconds
+
+Training Logistic classifier with MissForest imputation...                                                                                                   | 0/5 [00:00<?, ?it/s]
+Results saved to results/MissForest_Logistic_0.25.json
+
+Training RandomForest classifier with MissForest imputation...                                                                                       | 1/5 [00:00<00:00,  7.63it/s]
+Results saved to results/MissForest_RandomForest_0.25.json
+
+Training XGBoost classifier with MissForest imputation...██████████████████████▍                                                                     | 2/5 [00:00<00:00,  3.81it/s]
+Results saved to results/MissForest_XGBoost_0.25.json
+
+Training NGBoost classifier with MissForest imputation...█████████████████████████████████████████████▌                                              | 3/5 [00:00<00:00,  4.76it/s]
+Results saved to results/MissForest_NGBoost_0.25.json
+
+Training NeuralNet classifier with MissForest imputation...██████████████████████████████████████████████████████████████████▊                       | 4/5 [00:02<00:00,  1.47it/s]
+Results saved to results/MissForest_NeuralNet_0.25.json
+Classifiers for MissForest: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  1.98it/s]
+Imputation Methods:  60%|█████████████████████████████████████████████████████████████████████████▊                                                 | 3/5 [10:34<09:37, 288.79s/it]
+Applying GAIN imputation...
+Epoch 10/100, D_loss: 0.2789, G_loss: 0.3594
+Epoch 20/100, D_loss: 0.1944, G_loss: 0.4193
+Epoch 30/100, D_loss: 0.1881, G_loss: 0.3953
+Epoch 40/100, D_loss: 0.1789, G_loss: 0.3972
+Epoch 50/100, D_loss: 0.1828, G_loss: 0.3973
+Epoch 60/100, D_loss: 0.1835, G_loss: 0.3872
+Epoch 70/100, D_loss: 0.1813, G_loss: 0.3821
+Epoch 80/100, D_loss: 0.1812, G_loss: 0.3744
+Epoch 90/100, D_loss: 0.1825, G_loss: 0.3767
+Epoch 100/100, D_loss: 0.1803, G_loss: 0.3741
+GAIN imputation completed in 6.79 seconds
+
+Training Logistic classifier with GAIN imputation...                                                                                                         | 0/5 [00:00<?, ?it/s]
+Results saved to results/GAIN_Logistic_0.25.json
+
+Training RandomForest classifier with GAIN imputation...                                                                                             | 1/5 [00:00<00:00,  8.05it/s]
+Results saved to results/GAIN_RandomForest_0.25.json
+
+Training XGBoost classifier with GAIN imputation...████████████████████████▊                                                                         | 2/5 [00:00<00:00,  3.56it/s]
+Results saved to results/GAIN_XGBoost_0.25.json
+
+Training NGBoost classifier with GAIN imputation...█████████████████████████████████████████████████▏                                                | 3/5 [00:00<00:00,  4.36it/s]
+Results saved to results/GAIN_NGBoost_0.25.json
+
+Training NeuralNet classifier with GAIN imputation...███████████████████████████████████████████████████████████████████████▌                        | 4/5 [00:02<00:00,  1.38it/s]
+Results saved to results/GAIN_NeuralNet_0.25.json
+Classifiers for GAIN: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  1.94it/s]
+Imputation Methods:  80%|██████████████████████████████████████████████████████████████████████████████████████████████████▍                        | 4/5 [10:43<02:58, 178.48s/it]
+Applying MIWAE imputation...
+Epoch 10/30, Loss: 12.5179
+Epoch 20/30, Loss: 12.2909
+Epoch 30/30, Loss: 12.1704
+MIWAE imputation completed in 11.85 seconds
+
+Training Logistic classifier with MIWAE imputation...                                                                                                        | 0/5 [00:00<?, ?it/s]
+Results saved to results/MIWAE_Logistic_0.25.json
+
+Training RandomForest classifier with MIWAE imputation...                                                                                            | 1/5 [00:00<00:00,  6.89it/s]
+Results saved to results/MIWAE_RandomForest_0.25.json
+
+Training XGBoost classifier with MIWAE imputation...████████████████████████▍                                                                        | 2/5 [00:00<00:00,  3.55it/s]
+Results saved to results/MIWAE_XGBoost_0.25.json
+
+Training NGBoost classifier with MIWAE imputation...████████████████████████████████████████████████▌                                                | 3/5 [00:00<00:00,  4.58it/s]
+Results saved to results/MIWAE_NGBoost_0.25.json
+
+Training NeuralNet classifier with MIWAE imputation...██████████████████████████████████████████████████████████████████████▊                        | 4/5 [00:02<00:00,  1.27it/s]
+Results saved to results/MIWAE_NeuralNet_0.25.json
+Classifiers for MIWAE: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  1.82it/s]
+Imputation Methods: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [10:58<00:00, 131.69s/it]
+Plots saved in the 'plots' directory
+
+Imputation Method Comparison (AUC):
+   imputation  avg_validation_auc  avg_test_auc  avg_imputation_time
+0        GAIN            0.706959      0.736427             6.787850
+1        MICE            0.753549      0.796345             0.541538
+2       MIWAE            0.753750      0.790975            11.854845
+3        Mean            0.754247      0.795393             0.016981
+4  MissForest            0.756569      0.796943           626.795562
+
+Classifier Comparison (AUC):
+     classifier  avg_validation_auc  avg_test_auc
+0      Logistic            0.760691      0.737947
+1       NGBoost            0.692850      0.817319
+2     NeuralNet            0.746867      0.725999
+3  RandomForest            0.753465      0.758436
+4       XGBoost            0.771201      0.876382
+
+
+################################################################################
+# Running pipeline with missing percentage: 0.5
+################################################################################
+
+=== Running pipeline with missing percentage: 0.5 ===
+
+Loading data...
+Loading train data from: data/MIMIC_subset_mcar\devel_0_train_0_train_missing_0.5_test_missing_0.5.csv
+Loading test data from: data/MIMIC_subset_mcar\devel_0_train_0_train_missing_0.25_test_missing_0.5.csv
+Data loaded successfully. Train shape: (3077, 14), Test shape: (3847, 14)
+Imputation Methods:   0%|                                                                                                                                    | 0/3 [00:00<?, ?it/s]
+Applying Mean imputation...
+Mean imputation completed in 0.01 seconds
+
+Training Logistic classifier with Mean imputation...                                                                                                         | 0/5 [00:00<?, ?it/s]
+Results saved to results/Mean_Logistic_0.5.json
+
+Training RandomForest classifier with Mean imputation...                                                                                             | 1/5 [00:00<00:00,  9.16it/s]
+Results saved to results/Mean_RandomForest_0.5.json
+
+Training XGBoost classifier with Mean imputation...████████████████████████▊                                                                         | 2/5 [00:00<00:00,  4.31it/s]
+Results saved to results/Mean_XGBoost_0.5.json
+
+Training NGBoost classifier with Mean imputation...█████████████████████████████████████████████████▏                                                | 3/5 [00:00<00:00,  5.46it/s]
+Results saved to results/Mean_NGBoost_0.5.json
+
+Training NeuralNet classifier with Mean imputation...███████████████████████████████████████████████████████████████████████▌                        | 4/5 [00:01<00:00,  1.75it/s]
+Results saved to results/Mean_NeuralNet_0.5.json
+Classifiers for Mean: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  2.15it/s]
+Imputation Methods:  33%|█████████████████████████████████████████▎                                                                                  | 1/3 [00:02<00:04,  2.33s/it]
+Applying MICE imputation...
+MICE imputation completed in 0.23 seconds
+
+Training Logistic classifier with MICE imputation...                                                                                                         | 0/5 [00:00<?, ?it/s]
+Results saved to results/MICE_Logistic_0.5.json
+
+Training RandomForest classifier with MICE imputation...                                                                                             | 1/5 [00:00<00:00,  9.45it/s]
+Results saved to results/MICE_RandomForest_0.5.json
+
+Training XGBoost classifier with MICE imputation...████████████████████████▊                                                                         | 2/5 [00:00<00:00,  3.88it/s]
+Results saved to results/MICE_XGBoost_0.5.json
+
+Training NGBoost classifier with MICE imputation...█████████████████████████████████████████████████▏                                                | 3/5 [00:00<00:00,  5.01it/s]
+Results saved to results/MICE_NGBoost_0.5.json
+
+Training NeuralNet classifier with MICE imputation...███████████████████████████████████████████████████████████████████████▌                        | 4/5 [00:01<00:00,  1.63it/s]
+Results saved to results/MICE_NeuralNet_0.5.json
+Classifiers for MICE: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  2.23it/s]
+Imputation Methods:  67%|██████████████████████████████████████████████████████████████████████████████████▋                                         | 2/3 [00:04<00:02,  2.42s/it]
+Applying MissForest imputation...
+MissForest imputation completed in 476.28 seconds
+
+Training Logistic classifier with MissForest imputation...                                                                                                   | 0/5 [00:00<?, ?it/s]
+Results saved to results/MissForest_Logistic_0.5.json
+
+Training RandomForest classifier with MissForest imputation...                                                                                       | 1/5 [00:00<00:00,  7.01it/s]
+Results saved to results/MissForest_RandomForest_0.5.json
+
+Training XGBoost classifier with MissForest imputation...██████████████████████▍                                                                     | 2/5 [00:00<00:00,  3.16it/s]
+Results saved to results/MissForest_XGBoost_0.5.json
+
+Training NGBoost classifier with MissForest imputation...█████████████████████████████████████████████▌                                              | 3/5 [00:00<00:00,  4.12it/s]
+Results saved to results/MissForest_NGBoost_0.5.json
+
+Training NeuralNet classifier with MissForest imputation...██████████████████████████████████████████████████████████████████▊                       | 4/5 [00:02<00:00,  1.25it/s]
+Results saved to results/MissForest_NeuralNet_0.5.json
+Classifiers for MissForest: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:03<00:00,  1.64it/s]
+Imputation Methods: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [08:04<00:00, 161.38s/it]
+Plots saved in the 'plots' directory
+
+Imputation Method Comparison (AUC):
+   imputation  avg_validation_auc  avg_test_auc  avg_imputation_time
+0        MICE            0.730025      0.750067             0.233490
+1        Mean            0.738662      0.778092             0.006452
+2  MissForest            0.733719      0.767450           476.280561
+
+Classifier Comparison (AUC):
+     classifier  avg_validation_auc  avg_test_auc
+0      Logistic            0.747567      0.732287
+1       NGBoost            0.673971      0.780104
+2     NeuralNet            0.738067      0.724165
+3  RandomForest            0.763333      0.755359
+4       XGBoost            0.747739      0.834100
+
+
+Cross-Missing-Rate Analysis:
+
+AUC comparison across missing percentages:
+
+Missing percentage: 0.25
+Top imputation methods by test auc:
+   imputation  avg_test_auc
+4  MissForest      0.796943
+1        MICE      0.796345
+3        Mean      0.795393
+2       MIWAE      0.790975
+0        GAIN      0.736427
+Top classifiers by test auc:
+     classifier  avg_test_auc
+4       XGBoost      0.876382
+1       NGBoost      0.817319
+3  RandomForest      0.758436
+0      Logistic      0.737947
+2     NeuralNet      0.725999
+
+Missing percentage: 0.5
+Top imputation methods by test auc:
+   imputation  avg_test_auc
+1        Mean      0.778092
+2  MissForest      0.767450
+0        MICE      0.750067
+Top classifiers by test auc:
+     classifier  avg_test_auc
+4       XGBoost      0.834100
+1       NGBoost      0.780104
+3  RandomForest      0.755359
+0      Logistic      0.732287
+2     NeuralNet      0.724165
+
+F1 comparison across missing percentages:
+
+Missing percentage: 0.25
+Top imputation methods by test F1:
+   imputation  avg_test_F1
+1        MICE     0.380564
+4  MissForest     0.378500
+2       MIWAE     0.362705
+3        Mean     0.353147
+0        GAIN     0.254421
+Top classifiers by test F1:
+     classifier  avg_test_F1
+1       NGBoost     0.544418
+4       XGBoost     0.502737
+2     NeuralNet     0.306057
+0      Logistic     0.292612
+3  RandomForest     0.083512
+
+Missing percentage: 0.5
+Top imputation methods by test F1:
+   imputation  avg_test_F1
+1        Mean     0.349091
+0        MICE     0.321437
+2  MissForest     0.281918
+Top classifiers by test F1:
+     classifier  avg_test_F1
+1       NGBoost     0.462054
+4       XGBoost     0.443254
+2     NeuralNet     0.332518
+0      Logistic     0.272512
+3  RandomForest     0.077070
+
+
+Combined Analysis Across All Missing Percentages:
+
+Top 10 Imputation-Classifier Combinations (by AUC):
+    missing_percentage  imputation classifier  test_auc   test_f1
+7                 0.25        MICE    XGBoost  0.902315  0.551422
+2                 0.25        Mean    XGBoost  0.897877  0.539891
+12                0.25  MissForest    XGBoost  0.885494  0.518681
+22                0.25       MIWAE    XGBoost  0.882431  0.489978
+27                0.50        Mean    XGBoost  0.856427  0.489663
+3                 0.25        Mean    NGBoost  0.851630  0.570842
+13                0.25  MissForest    NGBoost  0.840348  0.603298
+8                 0.25        MICE    NGBoost  0.834074  0.574827
+23                0.25       MIWAE    NGBoost  0.832287  0.597183
+37                0.50  MissForest    XGBoost  0.826030  0.397146
+
+Combined results saved to 'results/combined_results_summary.csv'
+
+================================================================================
+Pipeline completed successfully!
+================================================================================
+(base) (.venv) PS D:\prethesis\Imputation_MCL>

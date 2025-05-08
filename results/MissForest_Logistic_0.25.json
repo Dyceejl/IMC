@@ -3,28 +3,28 @@
     "classifier": "Logistic",
     "missing_percentage": 0.25,
     "random_state": 42,
-    "imputation_time": 135.03828763961792,
+    "imputation_time": 626.7955617904663,
     "validation": {
-        "accuracy": 0.8324675324675325,
-        "balanced_accuracy": 0.5757490804700816,
-        "auc": 0.7762850991298107,
-        "sensitivity": 0.16901408450704225,
+        "accuracy": 0.8363636363636363,
+        "balanced_accuracy": 0.5863124607517718,
+        "auc": 0.7741769085852697,
+        "sensitivity": 0.19014084507042253,
         "specificity": 0.982484076433121,
-        "precision": 0.6857142857142857,
-        "recall": 0.16901408450704225,
-        "F1": 0.2711864406779661,
-        "brier_score": 0.12138098439279406
+        "precision": 0.7105263157894737,
+        "recall": 0.19014084507042253,
+        "F1": 0.3,
+        "brier_score": 0.12138142735228394
     },
     "test": {
-        "accuracy": 0.8567715102677411,
-        "balanced_accuracy": 0.5933027486098298,
-        "auc": 0.7539144136997624,
-        "sensitivity": 0.19968553459119498,
-        "specificity": 0.9869199626284646,
-        "precision": 0.7514792899408284,
-        "recall": 0.19968553459119498,
-        "F1": 0.31552795031055897,
-        "brier_score": 0.11279816608138596
+        "accuracy": 0.8572913958929036,
+        "balanced_accuracy": 0.5961359732366531,
+        "auc": 0.7529517245161581,
+        "sensitivity": 0.2059748427672956,
+        "specificity": 0.9862971037060105,
+        "precision": 0.7485714285714286,
+        "recall": 0.2059748427672956,
+        "F1": 0.32305795314426633,
+        "brier_score": 0.11291531269329974
     },
     "parameters": {
         "max_iter": 200

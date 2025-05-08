@@ -6,6 +6,7 @@ import seaborn as sns
 import os
 from scipy.spatial.distance import jensenshannon
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+from sklearn.preprocessing import StandardScaler
 
 
 def compute_sample_wise_discrepancy(X_true, X_imputed, mask):

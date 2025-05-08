@@ -3,7 +3,7 @@
     "classifier": "NeuralNet",
     "missing_percentage": 0.5,
     "random_state": 42,
-    "imputation_time": 0.005457401275634766,
+    "imputation_time": 0.006451606750488281,
     "validation": {
         "accuracy": 0.8454545454545455,
         "balanced_accuracy": 0.5973356059926438,

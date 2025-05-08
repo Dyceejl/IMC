@@ -35,7 +35,7 @@ sys.path.append(utils_path)
 # Import our custom modules
 from imputation.mean import MeanImputer
 from imputation.mice import MICEImputer
-from imputation.forest import MissForestImputer
+from imputation.forest import CustomMissForestImputer
 from imputation.gain import GAIN
 from imputation.miwae import MIWAE
 
@@ -157,15 +157,15 @@ def run_pipeline(missing_percentage, random_state=42):
     imputation_methods = {
         "Mean": MeanImputer(random_state=random_state),
         "MICE": MICEImputer(max_iter=10, random_state=random_state),
-        "MissForest": MissForestImputer(max_iter=10, n_estimators=100, random_state=random_state)
+        "MissForest": CustomMissForestImputer(max_iter=10, n_estimators=100, random_state=random_state)
     }
 
     # Add more complex imputation methods for smaller datasets or if resources allow
     if X_train.shape[0] < 1000 or missing_percentage <= 0.25:
         imputation_methods.update({
-            "GAIN": GAIN(n_epochs=100, batch_size=128, random_state=random_state)
+            "GAIN": GAIN(n_epochs=100, batch_size=128, random_state=random_state),
             # Temporarily disable MIWAE due to tensor type issues
-            # "MIWAE": MIWAE(n_epochs=30, batch_size=32, random_state=random_state)
+            "MIWAE": MIWAE(n_epochs=30, batch_size=32, random_state=random_state)
         })
 
     # Step 3: Define classifiers with tuned hyperparameters from the paper

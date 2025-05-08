@@ -1,0 +1,34 @@
+{
+    "imputation": "MIWAE",
+    "classifier": "NGBoost",
+    "missing_percentage": 0.25,
+    "random_state": 42,
+    "imputation_time": 11.85484504699707,
+    "validation": {
+        "accuracy": 0.8194805194805195,
+        "balanced_accuracy": 0.6195613169462636,
+        "auc": 0.6949739840315781,
+        "sensitivity": 0.3028169014084507,
+        "specificity": 0.9363057324840764,
+        "precision": 0.5180722891566265,
+        "recall": 0.3028169014084507,
+        "F1": 0.3822222222222222,
+        "brier_score": 0.14875791914522146
+    },
+    "test": {
+        "accuracy": 0.8884845334026514,
+        "balanced_accuracy": 0.7327156649018998,
+        "auc": 0.8322869107568519,
+        "sensitivity": 0.5,
+        "specificity": 0.9654313298037994,
+        "precision": 0.7412587412587412,
+        "recall": 0.5,
+        "F1": 0.5971830985915493,
+        "brier_score": 0.09163802892260998
+    },
+    "parameters": {
+        "n_estimators": 192,
+        "learning_rate": 0.04,
+        "subsample": 0.6
+    }
+}

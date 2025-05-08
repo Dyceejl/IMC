@@ -3,7 +3,7 @@
     "classifier": "XGBoost",
     "missing_percentage": 0.5,
     "random_state": 42,
-    "imputation_time": 0.23931527137756348,
+    "imputation_time": 0.2334904670715332,
     "validation": {
         "accuracy": 0.8389610389610389,
         "balanced_accuracy": 0.5824549206064411,

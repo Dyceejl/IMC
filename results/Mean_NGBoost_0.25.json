@@ -3,7 +3,7 @@
     "classifier": "NGBoost",
     "missing_percentage": 0.25,
     "random_state": 42,
-    "imputation_time": 0.006074190139770508,
+    "imputation_time": 0.01698136329650879,
     "validation": {
         "accuracy": 0.8428571428571429,
         "balanced_accuracy": 0.6338925271373463,
